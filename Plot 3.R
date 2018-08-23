@@ -15,7 +15,7 @@ HPC1$Date <- as.Date(HPC1$Date, format = "%d/%m/%Y")
 HPC <- subset(HPC1, Date == "2007-02-01" | Date == "2007-02-02")
 
 # Plot 3
-png(file = "./data/plot3.png", width = 480, height = 480, units="px")
+png(file = "./data/plot3.png", width = 480, height = 480)
 plot(HPC$DateTime, HPC$Sub_metering_1, xlab = "", ylab = "Energy sub metering", type = "l")
 lines(HPC$DateTime, HPC$Sub_metering_2, col = "red")
 lines(HPC$DateTime, HPC$Sub_metering_3, col = "blue")
