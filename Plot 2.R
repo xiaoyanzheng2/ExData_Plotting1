@@ -17,6 +17,6 @@ HPC <- subset(HPC1, Date == "2007-02-01" | Date == "2007-02-02")
 ## Plot 2
 ## Convert date, time
 HPC$DateTime <- as.POSIXct(paste(HPC$Date, HPC$Time))
-png(file = "./data/plot2.png", width = 480, height = 480, units="px")
+png(file = "./data/plot2.png", width = 480, height = 480)
 with(HPC, plot(DateTime, Global_active_power, xlab = "", ylab = "Global Active Power (kilowatt)", type = 'l'))
 dev.off()
