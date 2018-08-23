@@ -15,7 +15,7 @@ HPC1$Date <- as.Date(HPC1$Date, format = "%d/%m/%Y")
 HPC <- subset(HPC1, Date == "2007-02-01" | Date == "2007-02-02")
 
 # Plot 4
-png(file = "./data/plot4.png", width = 480, height = 480, units="px")
+png(file = "./data/plot4.png", width = 480, height = 480)
 par(mfrow = c(2, 2))
 plot(HPC$DateTime, HPC$Global_active_power, xlab = "", ylab = "Global Active Power (kilowatt)", type = "l")
 plot(HPC$DateTime, HPC$Voltage, xlab = "datetime", ylab = "Voltage", type = "l")
